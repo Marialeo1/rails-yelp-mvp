@@ -14,7 +14,7 @@ mcdo = { name: "Mcdo", address: "7 Rue du machin", phone_number:"0788990077", ca
 just_eat =  { name: "Just Eat", address: "99 rue bidule", phone_number:"0711223344", category: "belgian"}
 sushi = { name: "Sushi", address: "2 rue du poisson", phone_number:"0755667788", category: "japanese"}
 
-[ mcdo, pizza_eat, sushi ].each do |attributes|
+[ mcdo, just_eat, sushi ].each do |attributes|
   restaurant = Restaurant.create!(attributes)
   puts "Created #{restaurant.name}"
 end
